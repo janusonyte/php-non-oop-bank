@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
@@ -11982,6 +11984,278 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:export {
+  black: #080708;
+  blue: #3772FF;
+  red: #c52933;
+  yellow: #FDCA40;
+  gray: #E6E8E6;
+  green: rgb(81, 175, 125);
+  pink: rgb(204, 105, 122);
+  slate-gray: #36453b;
+  retro-purple: #442768;
+  retro-blue: #272760;
+}
+
+.mainbod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Roboto", monospace;
+  background-color: #272760;
+  min-height: 100vh;
+  color: white;
+}
+
 h1, .h1 {
   color: crimson;
+}
+
+.card {
+  margin: 100px;
+}
+
+button {
+  background-color: #E6E8E6;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 16px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  min-width: 100px;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+button.black {
+  background-color: #080708;
+  color: white;
+}
+button.black:not(:disabled):hover {
+  background: #231f23;
+}
+button.blue {
+  background-color: #3772FF;
+  color: white;
+}
+button.blue:not(:disabled):hover {
+  background: #003dd0;
+}
+button.red {
+  background-color: #c52933;
+  color: white;
+  transition: transform 0.5s;
+}
+button.red:not(:disabled):hover {
+  background: #71171d;
+  transform: scale(1.1);
+}
+button.yellow {
+  background-color: #FDCA40;
+  color: white;
+  transition: transform 0.5s;
+}
+button.yellow:not(:disabled):hover {
+  background: #d59c02;
+  transform: scale(1.1);
+}
+button.pink {
+  background-color: rgb(204, 105, 122);
+  color: white;
+}
+button.pink:not(:disabled):hover {
+  background: #9a3546;
+}
+button.slate-gray {
+  background-color: #36453b;
+  color: white;
+}
+button.slate-gray:not(:disabled):hover {
+  background: #090c0a;
+}
+button.purple-gradient {
+  background-image: linear-gradient(126.3deg, rgb(30, 2, 83) 32.2%, rgba(198, 55, 160, 0.46) 109.2%);
+  color: white;
+  transition: transform 0.5s;
+}
+button.purple-gradient:not(:disabled):hover {
+  transform: scale(1.2);
+}
+button.green {
+  background-color: rgb(81, 175, 125);
+  color: white;
+  transition: transform 0.5s;
+}
+button.green:not(:disabled):hover {
+  background: #31694b;
+  transform: scale(1.1);
+}
+button.close {
+  content: "▲";
+  font-size: 26px;
+  background: black;
+  color: #102A2D;
+}
+button.close:not(:disabled):hover {
+  background: transparent;
+  color: #6b1281;
+}
+
+p {
+  font-size: 20px;
+  padding: 0px 25px 10px 25px;
+  margin: auto;
+}
+
+ul.ul-style {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acc-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+  color: #36453b;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  color: #36453b;
+}
+
+.acc-titles {
+  -webkit-text-decoration: underline solid #777280;
+          text-decoration: underline solid #777280;
+  text-underline-offset: 5px;
+  color: #696b6e;
+  font-size: 15px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.acc-fields {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.field-input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #36453b;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.field-btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.funds {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20%;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card {
+  background-color: #FFDE66;
+  border: 2px solid black;
+  box-shadow: -16px 20px 0px 2px rgb(0, 0, 0);
+}
+
+.navbar {
+  background-color: #442768 !important;
+  border: 2px solid black;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-family: "Press Start 2P", cursive;
+  color: #FFDE66;
+}
+
+.nav-link {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  margin-left: 60px;
+  color: #FFDE66;
+}
+.nav-link:not(:disabled):hover {
+  text-decoration: underline;
+}
+
+th {
+  background: #FFDE66 !important;
+  border-bottom: 2px solid black !important;
+}
+
+td {
+  background: #FFDE66 !important;
+  border-bottom: 2px solid black !important;
+}
+
+.inner-card {
+  box-shadow: none;
+  box-shadow: -16px 25px 0px 2px #d4b235;
+}
+
+.card-header {
+  background-color: #FFDE66;
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+}
+
+.container {
+  background-color: #25af91;
+  border-radius: 20px;
+}
+
+.card-body {
+  color: #36453b;
 }
