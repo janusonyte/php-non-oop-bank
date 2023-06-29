@@ -2,10 +2,11 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 ![PHP](https://img.shields.io/badge/PHP-OOP-red.svg)
+![Retro](https://img.shields.io/badge/Retro-Design-pink.svg)
 
 # PHP non-OOP Bank
 
-_PHP bank functionality without OOP and retro design project_
+_PHP bank functionality without OOP. Retro design project_
 
 <br>
 
